@@ -11,9 +11,29 @@ class Sprint3 extends SparkBase{
     readParquetTable("MTcars")
     spark.sql(
 
-      ""
+      "SELECT disp FROM MTcars"
 
-    )
+    ).show(false)
+
+  }
+  @Test
+  def task_2(): Unit = {
+    readParquetTable("MTcars")
+    spark.sql(
+
+      "SELECT hp, wt, am FROM MTcars"
+
+    ).show(false)
+
+  }
+  @Test
+  def task_3(): Unit = {
+    readParquetTable("MTcars")
+    spark.sql(
+
+      "SELECT * FROM MTcars"
+
+    ).show(false)
 
   }
 
