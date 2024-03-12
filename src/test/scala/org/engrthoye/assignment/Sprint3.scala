@@ -7,11 +7,33 @@ import org.junit.Test
 class Sprint3 extends SparkBase{
 
   @Test
-  def task_1(): Unit = {
+  def examplle_1(): Unit = {
     readParquetTable("MTcars")
     spark.sql(
 
-      ""
+      "SELECT disp from MTcars"
+
+    )
+
+  }
+
+  @Test
+  def examplle_2(): Unit = {
+    readParquetTable("MTcars")
+    spark.sql(
+
+      "SELECT hp, wt, am from MTcars"
+
+    )
+
+  }
+
+  @Test
+  def examplle_3(): Unit = {
+    readParquetTable("MTcars")
+    spark.sql(
+
+      "SELECT * from MTcars"
 
     )
 
