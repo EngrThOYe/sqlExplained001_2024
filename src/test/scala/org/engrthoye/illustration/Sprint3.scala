@@ -13,7 +13,7 @@ class Sprint3 extends SparkBase{
 
       ""
 
-    )
+    ).show(false)
 
   }
 
