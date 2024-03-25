@@ -109,7 +109,7 @@ class Sprint5 extends SparkBase{
   def examplle_11(): Unit = {
     readParquetTable("MTcars")
 
-    disp
+
     spark.sql(
 
       "SELECT model, qsec FROM MTcars WHERE model = 'Mazda RX4 Wag'"
