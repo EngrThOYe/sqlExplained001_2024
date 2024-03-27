@@ -4,7 +4,7 @@ import org.engrthoye.SparkBase
 import org.junit.Test
 
 
-class Sprint3 extends SparkBase{
+class Sprint4 extends SparkBase{
 
   @Test
   def task_1(): Unit = {
